@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "calisthenics-hero": {
+      "i18n": {
+        "sourceLocale":"en-US",
+        "locales": {
+          "de": "src/locale/messages.de.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -25,6 +31,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "localize": true,
             "aot": true,
             "assets": [
               "src/favicon.ico",
@@ -36,6 +43,18 @@
             "scripts": []
           },
           "configurations": {
+            "de": {
+              "localize": ["de"],
+              "baseHref": "/de/",
+              "deployUrl": "/de/",
+              "outputPath": "dist/calisthenics-hero/de"
+            },
+            "en-US": {
+              "localize": ["en-US"],
+              "baseHref": "/en-US/",
+              "deployUrl": "/en-US/",
+              "outputPath": "dist/calisthenics-hero/en-US"
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -73,6 +92,14 @@
           "configurations": {
             "production": {
               "browserTarget": "calisthenics-hero:build:production"
+            },
+            "de": {
+              "browserTarget": "calisthenics-hero:build:de",
+              "servePath": "/de/"
+            },
+            "en-US": {
+              "browserTarget": "calisthenics-hero:build:en-US",
+              "servePath": "/en-US/"
             }
           }
         },

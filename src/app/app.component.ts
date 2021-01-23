@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'calisthenics-hero';
+
+  returnHome()
+  {
+    console.log("return home context");
+  }
 }
