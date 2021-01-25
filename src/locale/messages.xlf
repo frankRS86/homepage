@@ -9,6 +9,70 @@
           <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="3903602653066076301" datatype="html">
+        <source>What is calisthenics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-screen/home-screen.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5213716383379512649" datatype="html">
+        <source>Basically calisthenics means physical training with nothing but your bodyweight. The name comes from Greek words &quot;kalos&quot;, which is beautiful or good and &quot;sthenos&quot; - the Greek word for strength. And this is exacly what we all want right? A strong and well shaped healthy body. The good news is, calisthenics helps us to achieve exactly that, in an efficient and fun way. So if your not into fitnesscenters with all the machines and pumping iron, your at the right adress. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-screen/home-screen.component.html</context>
+          <context context-type="linenumber">5,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3654818213110424803" datatype="html">
+        <source>Why calisthenics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-screen/home-screen.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5865838880470163309" datatype="html">
+        <source>You might ask, does it even work without any weights? Without the high sophisticated machines? Am I able to build muscle or to fix my bad posture or back pains with just Bodyweight excercises and get in shape? Short answer here is: yes. Calisthenics makes heavy use of so called compounds excersises. Meaning there are no (or very few) isolated excersises for just one single muscle. Rather it helps training large muscle groups in their natural interaction. E.g. instead of training your biceps with a dumbell, you would do combound excercises like pull ups to train biceps, Latissimus, Lower Trapezius and more, all in one excercise. This is also a heavy boost for your coordination and mobility. Can&apos;t do pullups? No problem there are progessions for every skill and strenght level, from begginer to olympic gold medal winner. Weak or strong, man or woman, old or young, all doen&apos;t matter, there are excercises for every one and for every goal.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-screen/home-screen.component.html</context>
+          <context context-type="linenumber">17,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8805877215574215008" datatype="html">
+        <source>What do you need</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-screen/home-screen.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6384055711430371606" datatype="html">
+        <source>For the beginning, you basically just need two things: The easy one: Your body. The hard one: A goal, and the consistency to achieve it. With both ready, your good to start. Nevertheless some resitance bands might help to build some basic strength. Of course if you are more advanced or want to achieve more difficult and complicated skills some equimpment or specific training area is required. Number one priority should be a pullup Bar. This can be in a near calisthenics park, a playground, a swing in the garden or a doorway pullup bar. Anything which is suitable to carry your bodyweight is good. In an ideal world it is high enough to fit your whole body with raised armes under the bar and also some space above, enough for your upper body. If this not the case don&apos;t worry, the number 2 most usefull equipment are gymnasic rings. They not only provide more challenging variations of excersises due to their flexibility, they also allow you to adjust the perfext hight for the excersise you want do do. E.g. lower them to perform dips or muscle-ups. Besides you can carry and install them everywhere you want. So I hope you got the message: Get yourself some rings. Number 3 is weights. If Bodyweight exercises get to easy, you can help out with additional weights, but its not mendatory, you can raise difficulty always by body position or excercise type. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-screen/home-screen.component.html</context>
+          <context context-type="linenumber">35,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7353334018991857400" datatype="html">
+        <source>How to start</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-screen/home-screen.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2598703394778941061" datatype="html">
+        <source>Disclaimer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-screen/home-screen.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1178519407718531295" datatype="html">
+        <source>I am not a doctor nor a physiotherapist. All excercises presented are based on personal experience. If you feel any pain, are injured or have some other physical restrictions, don&apos;t do any excercise without the consultation of your doctor. Make sure your&apos;re able to perform an excercise you choose correctly and without any pain. Some advanced excercises have a high risk of injury if your not stong- or skilled enough. Only do excercises in your skill level, you&apos;re responsible to perform a safe and healthy training and choose the suiting excercises. For example the iron cross or planche puts heavy load on tendons and shoulder joints. Only advanced athletes should do these excercises. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-screen/home-screen.component.html</context>
+          <context context-type="linenumber">65,70</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>

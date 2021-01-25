@@ -119,7 +119,7 @@
     //border: 1px solid #eee;
     //background-color: #fafafa;
     height: 40px;
-    width: 250px;
+    width: 200px;
     margin: 0 8px 16px;
     padding: 16px;
     display: flex;
@@ -128,7 +128,7 @@
     align-items: center;
     transition: all 0.2s ease-in-out;
     line-height: 24px;
-    font-size: 24px;
+    font-size: 19px;
     font-weight: bold;
   }
 
@@ -285,12 +285,12 @@
     margin-right: 4px;
   }
 
-  svg#clouds {
+  img#clouds {
     position: fixed;
     bottom: -160px;
-    left: -230px;
     z-index: -10;
-    width: 1920px;
+    width: 100%;
+    opacity: 20%;
   }
 
     /* Responsive Styles */
@@ -318,6 +318,11 @@
     
       @media screen and (max-width: 575px) {
         svg#rocket-smoke {
+          display: none;
+          visibility: hidden;
+        }
+
+        img#clouds {
           display: none;
           visibility: hidden;
         }
