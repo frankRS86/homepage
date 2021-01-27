@@ -1,39 +1,38 @@
-<div class="headlinecontent" (click)="returnHome()">
-  <img src="assets/cape.png" style="width:120px; height:120px">
+<div class="headlinecontent">
+  <img src="assets/cape.png" style="width:120px; height:120px; cursor:pointer;" (click)="returnHome()">
   
-  <div class="name">
+  <div class="name" (click)="returnHome()">
     Calisthenics<br>Hero
-   
   </div>
   <p i18n style="margin-left:16px;margin-top:70px" class="subtitle">Be a hero - start calisthenics today</p>
 
  
   <div class="card-container" style="margin-left:20px">
-    <div class="card" target="_blank" rel="noopener">
+    <div class="card" target="_blank" rel="noopener" (click)="navigateTo('learning')"> 
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 30 30"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
-      <div>Learning paths</div>
+      <div i18n>Learning paths</div>
      
     </div>
 
-    <div class="card" target="_blank" rel="noopener">
+    <div class="card" target="_blank" rel="noopener" (click)="navigateTo('schedules')">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
-      <span>training-schedules</span>
+      <span i18n>training-schedules</span>
      
     </div>
 
     <div class="card" target="_blank" rel="noopener">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/></svg>
-      <span>excersises</span>
+      <span i18n>excersises</span>
      
     </div>
 
     <div class="card" target="_blank" rel="noopener">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/></svg>
-      <span>nutrition</span>
+      <span i18n>nutrition</span>
       
     </div>
 
-    <div class="language">de | en</div>
+    <div class="language"><a style="color:black" href="http://www.calisthenicshero.com/de">de</a> | <a style="color:black" href="http://www.calisthenicshero.com/en-US">en</a></div>
 
 </div>
 </div>

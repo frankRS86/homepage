@@ -3,14 +3,42 @@
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="2624324285303593501" datatype="html">
-        <source>Be a hero - start calisthenics today</source>
+        <source>Be a hero - start Calisthenics today</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="2873377452418005875" datatype="html">
+        <source>Learning paths</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2127201833950652292" datatype="html">
+        <source>training-schedules</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8988731325679456085" datatype="html">
+        <source>excersises</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2188567932022199035" datatype="html">
+        <source>nutrition</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="3903602653066076301" datatype="html">
-        <source>What is calisthenics</source>
+        <source>What is Calisthenics</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home-screen/home-screen.component.html</context>
           <context context-type="linenumber">4</context>
@@ -24,7 +52,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="3654818213110424803" datatype="html">
-        <source>Why calisthenics</source>
+        <source>Why Calisthenics</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home-screen/home-screen.component.html</context>
           <context context-type="linenumber">16</context>

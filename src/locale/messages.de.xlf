@@ -10,9 +10,41 @@
           <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
+            <trans-unit id="2873377452418005875" datatype="html">
+        <source>Learning paths</source>
+         <target>Lernpfade</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2127201833950652292" datatype="html">
+        <source>training-schedules</source>
+         <target>Trainingspläne</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8988731325679456085" datatype="html">
+        <source>excersises</source>
+        <target>Übungen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2188567932022199035" datatype="html">
+        <source>nutrition</source>
+        <target>Ernährung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
         <trans-unit id="3903602653066076301" datatype="html">
         <source>What is calisthenics</source>
-        <target>Was ist Calisthenics</target>
+        <target>Was ist überhaupt Calisthenics</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home-screen/home-screen.component.html</context>
           <context context-type="linenumber">4</context>
