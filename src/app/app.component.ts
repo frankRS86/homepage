@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { environment } from './../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,9 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'calisthenics-hero';
+
+  redirect_en = environment.en_redirect;
+  redirect_de = environment.de_redirect;
 
  public constructor(private router:Router)
  {

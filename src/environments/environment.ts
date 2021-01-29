@@ -3,8 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  en_redirect:"localhost:4200/en-US",
+  de_redirect :"localhost:4200/de"
 };
+
+
 
 /*
  * For easier debugging in development mode, you can import the following file
