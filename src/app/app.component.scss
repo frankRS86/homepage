@@ -285,13 +285,27 @@
     margin-right: 4px;
   }
 
-  img#clouds {
+.clouds {
     position: fixed;
-    bottom: -160px;
-    z-index: -10;
+    top:130px;
+    height:800px;
+    z-index: -1;
     width: 100%;
-    opacity: 20%;
+    opacity: 10%;
   }
+
+  .background{    
+    background-image: url('../assets/Capture2.PNG');
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.1;
+    background-attachment: scroll;
+}
 
     /* Responsive Styles */
     @media screen and (max-width: 767px) {
@@ -322,7 +336,7 @@
           visibility: hidden;
         }
 
-        img#clouds {
+        .clouds {
           display: none;
           visibility: hidden;
         }
