@@ -26,6 +26,7 @@
 {
     display:flex;
     width:60%;
+    align-items: center;
 
     font-family:optima;
     font-size:20px;
@@ -34,12 +35,19 @@
     white-space: -pre-wrap;
     white-space: -o-pre-wrap;
     word-wrap: break-word;
+
 }
 
 .textblock-right
 {
     @extend .textblock;
     float:right;
+}
+
+.textimage
+{
+    width: 500px;
+    height: 400px;
 }
 
 @media screen and (max-width: 575px) {
