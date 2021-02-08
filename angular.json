@@ -26,12 +26,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/calisthenics-hero",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "localize": true,
+            "localize": false,
             "aot": true,
             "assets": [
               "src/favicon.ico",
@@ -47,13 +47,13 @@
               "localize": ["de"],
               "baseHref": "/de/",
               "deployUrl": "/de/",
-              "outputPath": "dist/calisthenics-hero/de"
+              "outputPath": "dist/de"
             },
             "en-US": {
               "localize": ["en-US"],
               "baseHref": "/en-US/",
               "deployUrl": "/en-US/",
-              "outputPath": "dist/calisthenics-hero/en-US"
+              "outputPath": "dist/en-US"
             },
             "production": {
               "fileReplacements": [
@@ -65,7 +65,9 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
+              "extractCss": true,
               "namedChunks": false,
+              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
