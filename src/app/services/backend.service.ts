@@ -20,10 +20,13 @@ export class BackendService
     requestImage(imageId:string): Observable<Blob>
     {
        return this.http
-        .get(this.baseUrl+"paths/images/"+imageId, { responseType: 'blob' });
+        .get(this.baseUrl+"api/paths/images/"+imageId, { responseType: 'blob' }).pipe(
+            tap(_ => console.log('fetched image for imageID '+imageId))
+        );
     }
 
     createImageFromBlob(image: Blob, target:any) {
+        console.log("create image for "+target.id)
         let reader = new FileReader();
         reader.addEventListener("load", () => {
            target.image = reader.result;
@@ -39,7 +42,7 @@ export class BackendService
 
     var culture = this.getCulture();    
 
-    return this.http.get<Path[]>(this.baseUrl+url+"?culture="+culture).pipe(
+    return this.http.get<Path[]>(this.baseUrl+"api/"+url+"?culture="+culture).pipe(
         tap(_ => console.log('fetched heroes')),catchError(this.handleError<Path[]>('getHeroes', [])));
     }
   
@@ -59,7 +62,7 @@ export class BackendService
 
     getCulture() :string
     {
-        return "de";
+        return "en-US";
     }
 
 }

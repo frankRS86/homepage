@@ -1,0 +1,10 @@
+<p>exercise-detail-screen works!</p>
+<a [routerLink]="['/exercises']">back to overview</a>
+
+<div *ngIf="exercise !== undefined">
+    {{exercise.name}}
+    {{exercise.description}}
+    <div *ngIf="exercise.images">
+        <img *ngFor="let item of exercise.images; let i = index;" [src]="exercise.images[i].image" style="width:280px;height:280px;"/>
+    </div>
+</div>

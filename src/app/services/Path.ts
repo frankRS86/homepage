@@ -1,8 +1,7 @@
-import { BackendService } from "./backend.service";
 
 export class Path
 {
-    constructor(name:string, imageID:string,private http:BackendService)
+    constructor(name:string, imageID:string)
     {
         this.name = name;
         this.imageID = imageID;

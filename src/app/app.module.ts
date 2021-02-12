@@ -9,6 +9,7 @@ import { PathScreenComponent } from './paths-overview-screen/paths-overview-scre
 import { PathDetailScreenComponent } from './path-detail-screen/path-detail-screen.component';
 import { ExerciseScreenComponent } from './exercise-screen/exercise-screen.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ExerciseDetailScreenComponent } from './exercise-detail-screen/exercise-detail-screen.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     SchedulesComponent,
     PathScreenComponent,
     PathDetailScreenComponent,
-    ExerciseScreenComponent
+    ExerciseScreenComponent,
+    ExerciseDetailScreenComponent
   ],
   imports: [
     BrowserModule,

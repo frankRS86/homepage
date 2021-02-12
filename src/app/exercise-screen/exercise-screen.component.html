@@ -1,1 +1,9 @@
-<p>exercise-screen works!</p>
+<p i18n>All exercises</p>
+<input #searchbox placeholder="exercise name" (keyup)="search(searchbox.value)"/>
+
+<div class="container">
+<div *ngFor="let item of exercises; let i=index;">
+    <p *ngIf="showIndexLetter(i)" class="indexLetter">{{indexLetter}}</p>
+    <a [routerLink]="['/exercises',item.id]">{{item.name}}</a>
+</div>
+</div>
