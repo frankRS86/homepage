@@ -10,7 +10,7 @@ import { ExerciseDetailScreenComponent } from './exercise-detail-screen/exercise
 const HOME = 'home';
 const SCHEDULE = 'schedules';
 const PATHS = 'paths';
-const PATH = 'path';
+const PATH = 'paths';
 const Exercise = 'exercises';
 const ExerciseDetail = 'exercises';
 
@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: HOME, component: HomeScreenComponent },
   { path: SCHEDULE, component: SchedulesComponent },
   { path: PATHS, component: PathScreenComponent },
-  { path: PATH, component: PathDetailScreenComponent },
+  { path: PATH+"/:id", component: PathDetailScreenComponent },
   { path: Exercise, component: ExerciseScreenComponent },
   { path: ExerciseDetail+"/:id", component: ExerciseDetailScreenComponent }
 

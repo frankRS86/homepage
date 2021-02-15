@@ -1,9 +1,10 @@
 export class Exercise
 {
-    constructor(id:String,description:string,name:string, imageID:string[])
+    constructor(id:String,description:string,name:string, imageID:string[],stage:number)
     {
         this.name = name;
         this.description = description;
+        this.stage = stage;
         this.images = [];
         var c = 0;
         for(var img of imageID)
@@ -14,6 +15,7 @@ export class Exercise
         }
     }
     
+     public stage:number;
      public description;
      public name:string;
      public images:ImageItem[];

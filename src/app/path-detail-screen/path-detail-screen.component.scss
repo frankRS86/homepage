@@ -1,0 +1,38 @@
+@import "../app.component.scss"; 
+
+.exercise
+{
+    margin: 0px auto 16px auto;
+    width:700px;
+    height:280px;
+    //border-bottom: 2px solid black;
+    display: table;
+   // margin-bottom: 16px;
+}
+
+.content
+{
+   // border-style: solid;
+    font-family: Optima;
+    font-size: 20px;
+    
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: center;
+}
+
+.contentimg
+{    
+    float: right; 
+}
+
+.colorbackground
+{
+    position: relative;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    background-color: red;
+    background: rgb(36,96,140);
+    background: linear-gradient(90deg, rgba(36,96,140,0.458420868347339) 0%, rgba(36,96,140,1) 100%);
+}

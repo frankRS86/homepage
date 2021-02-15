@@ -1,31 +1,14 @@
-Follow the path to glory
-<div (click)="backToOverview()">back to overview</div>
 
-<div class="card-container">
+<p class="headline">follow the path to glory</p>
+<a [routerLink]="['/paths']">back to overview</a>
+
    
-    <div class="card" (click)="selectPath('name')">
-    <div><p>Hand</p></div>
-    <img src="assets/pullup1.JPG" style="width:280px;height:280px;"/>
-    </div>
+    <a *ngFor="let item of exercises;let i = index;" class="exercise" [routerLink]="['/exercises',item.name]">
+        <div class="content"><p>{{item.name}}</p><p> lalala details</p></div>
+        <div *ngIf="exercises[i].images[0]">
+             <img [src]="exercises[i].images[0].image" class="contentimg" style="width:280px;height:280px;"/>
+        </div>
+    </a>
 
-    <div class="card" (click)="selectPath('name')">
-        <div><p>Handstand</p></div>
-        <img src="assets/pullup1.JPG" style="width:280px;height:280px;"/>
-    </div>
+    <div class="colorbackground"></div>
 
-    <div class="card" (click)="selectPath('name')">
-        <div><p>Handstand</p></div>
-        <img src="assets/pullup1.JPG" style="width:280px;height:280px;"/>
-    </div>
-
-    <div class="card" (click)="selectPath('name')">
-        <div><p>Handstand</p></div>
-        <img src="assets/pullup1.JPG" style="width:280px;height:280px;"/>
-    </div>
-
-    <div class="card" (click)="selectPath('name')">
-        <div><p>Handstand</p></div>
-        <img src="assets/pullup1.JPG" style="width:280px;height:280px;"/>
-    </div>
-
-</div>

@@ -19,7 +19,7 @@ export class ExerciseDetailScreenComponent implements OnInit {
     var id = this.route.snapshot.paramMap.get('id');
     this.service.requestApi("exercises/"+id).subscribe(data =>
       {
-        this.exercise = new Exercise(data.id,data.description,data.name,data.imageIDs)
+        this.exercise = new Exercise(data.id,data.description,data.name,data.imageIDs,data.stage)
         console.log(this.exercise);
         if(this.exercise.images === undefined)
         {

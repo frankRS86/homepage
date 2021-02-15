@@ -26,6 +26,27 @@
     flex: 1;
   }
 
+ .headline
+{
+    font-family:"Calibri Light";
+    font-size: 46px;
+    font-weight: 100;
+    color:black;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.subheadline
+{
+  font-family:"Calibri Light";
+  font-size: 26px;
+  font-weight: 60;
+  color:black;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+
   .toolbar {
     position: absolute;
     top: 0;
@@ -87,6 +108,7 @@
     font-family:Bebas-Neue;
     font-size:50px;
     align-items: center;
+    margin-bottom: 16px;
     //background: rgb(36,96,140);
     //background: linear-gradient(90deg, rgba(36,96,140,0.458420868347339) 0%, rgba(36,96,140,1) 100%);
    
@@ -302,7 +324,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    z-index: -1;
+    z-index: -5;
     opacity: 0.1;
     background-attachment: scroll;
 }
