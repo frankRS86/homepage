@@ -4,8 +4,10 @@
 
    {{exercises.length}}
     <div *ngFor="let item of exercises;let i = index;" class="exercise" [routerLink]="['/paths/',pathId,item.id]">
-        <div class="content"><p class="itemname">{{item.name}}</p><p> {{item.descriptions[0]}}</p></div>
-        <div class="contentlevel">level {{item.stage}}</div>
+        <span class="content"><p class="itemname">{{item.name}}</p></span>
+        <div class="contentlevel">level {{item.stage}}
+            <div *ngFor="let i of range(item.stage)"><img style="width:20px; height:20px; float:left;" src="assets/biceps.png"></div>
+        </div>
         <div *ngIf="exercises[i].images[0]">
              <img [src]="'assets/'+exercises[i].images[0].imageID+'.JPG'" class="contentimg" style="width:280px;height:280px;"/>
         </div>

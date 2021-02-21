@@ -62,6 +62,11 @@ export class PathDetailScreenComponent implements OnInit,AfterViewInit {
 
   }
 
+  range(i:number)
+  {
+    return new Array(i);
+  }
+
   getColor(index:number):string
   {
      var stage = this.exercises[index].stage;
