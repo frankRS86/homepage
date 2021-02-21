@@ -43,7 +43,7 @@ export class BackendService
     var culture = this.getCulture();    
 
     return this.http.get<Path[]>(this.baseUrl+"api/"+url+"?culture="+culture).pipe(
-        tap(_ => console.log('fetched heroes')),catchError(this.handleError<Path[]>('getHeroes', [])));
+        tap(data => console.log('fetched data:'+JSON.stringify(data))),catchError(this.handleError<Path[]>('getHeroes', [])));
     }
   
     private handleError<T>(operation = 'operation', result?: T) {

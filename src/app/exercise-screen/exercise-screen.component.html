@@ -1,9 +1,18 @@
 <p i18n class="headline">All exercises</p>
-<input #searchbox placeholder="exercise name" (keyup)="search(searchbox.value)"/>
+
+<div class="filterbox">
+    <input id="searchbox" #searchbox placeholder="exercise name" (keyup)="search(searchbox.value)"/>
+    <div class="filter" (click)="selectFilter(1)" [style.background-color]="(selectedFilter === 1)?'steelblue' : ''">Push</div>
+    <div class="vl"></div>
+    <div class="filter" (click)="selectFilter(2)" [style.background-color]="(selectedFilter === 2)?'steelblue' : ''">Pull</div>
+    <div class="vl"></div>
+    <div class="filter" (click)="selectFilter(3)" [style.background-color]="(selectedFilter === 3)?'steelblue' : ''">Legs</div>
+    <div class="vl"></div>
+</div>
 
 <div class="container">
 <div *ngFor="let item of exercises; let i=index;">
-    <p *ngIf="showIndexLetter(i)" class="indexLetter">{{indexLetter}}</p>
+    <p *ngIf="showIndexLetter(i)" class="indexLetter">{{getIndexLetter()}}</p>
     <a [routerLink]="['/exercises',item.id]">{{item.name}}</a>
 </div>
 </div>

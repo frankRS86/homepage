@@ -1,12 +1,20 @@
 export class Exercise
 {
-    constructor(id:String,description:string,name:string, imageID:string[],stage:number)
+    constructor(id:string,descriptions:string[],name:string, imageID:string[],stage:number,type:string)
     {
+        this.id = id;
+        this.type = type;
         this.name = name;
-        this.description = description;
+        this.descriptions = descriptions;
         this.stage = stage;
         this.images = [];
         var c = 0;
+
+        if(imageID === undefined || imageID.length == 0)
+        {
+            return;
+        }
+
         for(var img of imageID)
         {
             this.images.push(
@@ -15,8 +23,10 @@ export class Exercise
         }
     }
     
+     public id:string;
+     public type:string;
      public stage:number;
-     public description;
+     public descriptions:string[];
      public name:string;
      public images:ImageItem[];
 }

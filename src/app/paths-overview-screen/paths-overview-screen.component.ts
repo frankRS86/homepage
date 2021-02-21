@@ -22,14 +22,19 @@ export class PathScreenComponent implements OnInit {
     this.http.requestApi("paths").subscribe(response =>
       {
         this.paths = response;
-        for(var path of this.paths)
-        {
-           this.http.requestImage(path.imageID).subscribe(
-             data => this.http.createImageFromBlob(data,path)
-           );
-        }
+        // for(var path of this.paths)
+        // {
+        //     this.createImage(path);
+        // }
 
       })
+  }
+
+  createImage(path:Path)
+  {
+    this.http.requestImage(path.imageID).subscribe(
+      data => this.http.createImageFromBlob(data,path)
+    );
   }
 
   selectPath(value:String)

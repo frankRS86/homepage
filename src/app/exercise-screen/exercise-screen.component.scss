@@ -2,7 +2,7 @@
 
 .container
 {
-    width:420px;
+    width:220px;
     margin: 16px auto 10px auto;
     font-family:optima;
     font-size:20px;
@@ -14,3 +14,34 @@
     font-size:25px;
     font-weight: bold;
 }
+
+#searchbox
+{
+    margin-left: 16px;
+    height:25px;
+}
+
+.filterbox
+{
+  width:600px;  
+  margin: 16px auto 10px auto;
+  font-family:"Calibri Light";
+  font-size: 25px;
+ 
+}
+
+.filter
+{
+    width:70px;
+    float: left;
+    //margin-left: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.vl {
+    border-left: 2px solid darkgray;
+    height: 31px;
+    float:left;
+   // margin-left: 16px;
+  }

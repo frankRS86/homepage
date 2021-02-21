@@ -11,15 +11,16 @@ import { Exercise, ImageItem } from '../services/Exercise';
 export class ExerciseDetailScreenComponent implements OnInit {
 
   public exercise:Exercise;
+  public step:string="starting position";
 
   constructor(private router:Router,private route: ActivatedRoute,private service:BackendService) 
   {
     this.exercise = {} as Exercise;
 
-    var id = this.route.snapshot.paramMap.get('id');
+    var id = this.route.snapshot.paramMap.get('exId');
     this.service.requestApi("exercises/"+id).subscribe(data =>
       {
-        this.exercise = new Exercise(data.id,data.description,data.name,data.imageIDs,data.stage)
+        this.exercise = new Exercise(data.id,data.descriptions,data.name,data.imageIDs,data.stage,data.type)
         console.log(this.exercise);
         if(this.exercise.images === undefined)
         {

@@ -1,1 +1,75 @@
 @import "../app.component.scss"; 
+
+.content{
+    margin: 16px auto 16px auto;
+}
+
+.description
+{
+    margin-top:16px;
+    font-family: Optima;
+    font-weight: lighter;
+    font-size: 20px;
+    //border-style: solid;
+    width:600px;
+}
+
+.image
+{
+    margin-left:20px;
+    width:280px;
+    height:280px;
+}
+
+.video
+{
+    width:660px; 
+    height:415px;
+
+}
+
+.step
+{
+    font-family: Optima;
+    font-weight: bolder;
+    font-size: 28px;
+    text-align: left;
+    width:600px;
+    //border-style: solid;
+}
+
+@media screen and (max-width: 575px) {
+
+    .description
+    {
+        margin-top:16px;
+        font-family: Optima;
+        font-weight: lighter;
+        font-size: 20px;
+        //border-style: solid;
+        width:100%;
+    }
+    
+    .step
+    {
+        font-family: Optima;
+        font-weight: bolder;
+        font-size: 28px;
+        text-align: left;
+        width:100%;
+        //border-style: solid;
+    }
+
+    .image
+    {
+        margin-left: 0px;
+        width:100%;
+        height: auto;
+    }
+
+    .video
+    {
+        width:100%;
+        height:auto;
+    }
+  }

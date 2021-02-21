@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BackendService } from '../services/backend.service';
 import { Exercise, ImageItem } from '../services/Exercise';
@@ -8,29 +8,36 @@ import { Exercise, ImageItem } from '../services/Exercise';
   templateUrl: './path-detail-screen.component.html',
   styleUrls: ['./path-detail-screen.component.scss']
 })
-export class PathDetailScreenComponent implements OnInit {
+export class PathDetailScreenComponent implements OnInit,AfterViewInit {
 
+  pathId:string ="";
   exercises:Exercise[];
 
   constructor(private router:Router,private route:ActivatedRoute, private service:BackendService) {
     this.exercises = [];
+  
+  }
+  async ngAfterViewInit() {
+    
     var id = this.route.snapshot.paramMap.get('id');
-    this.service.requestApi("paths/"+id).subscribe(data =>
+    this.pathId = id || "unknown";
+    this.service.requestApi("paths/"+id).subscribe(async data =>
       {
         console.log(data);
 
         for(var item of data)
         { 
-            var ex = new Exercise(item.id,item.description,item.name,item.imageIDs,item.stage)
-            this.exercises.push(ex);
-
-            if(ex.images.length === 0)
-            {
-              continue;
-            }
-            var img = ex.images[0];
-            this.createImageFromBlob(img);
-     
+           var exItem = await this.service.requestApi("exercises/"+item).toPromise();
+            
+              var ex = new Exercise(exItem.id,exItem.descriptions,exItem.name,exItem.imageIDs,exItem.stage,exItem.type)
+              this.exercises.push(ex);
+              // if(ex.images.length === 0)
+              // {
+              //   return;
+              // }
+              // var img = ex.images[0];
+              // this.createImageFromBlob(img);
+            
         }
 
       });

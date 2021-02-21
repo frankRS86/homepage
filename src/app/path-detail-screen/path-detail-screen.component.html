@@ -2,13 +2,14 @@
 <p class="headline">follow the path to glory</p>
 <a [routerLink]="['/paths']">back to overview</a>
 
-   
-    <a *ngFor="let item of exercises;let i = index;" class="exercise" [routerLink]="['/exercises',item.name]">
-        <div class="content"><p>{{item.name}}</p><p> lalala details</p></div>
+   {{exercises.length}}
+    <div *ngFor="let item of exercises;let i = index;" class="exercise" [routerLink]="['/paths/',pathId,item.id]">
+        <div class="content"><p class="itemname">{{item.name}}</p><p> {{item.descriptions[0]}}</p></div>
+        <div class="contentlevel">level {{item.stage}}</div>
         <div *ngIf="exercises[i].images[0]">
-             <img [src]="exercises[i].images[0].image" class="contentimg" style="width:280px;height:280px;"/>
+             <img [src]="'assets/'+exercises[i].images[0].imageID+'.JPG'" class="contentimg" style="width:280px;height:280px;"/>
         </div>
-    </a>
+    </div>
 
     <div class="colorbackground"></div>
 

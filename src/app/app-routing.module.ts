@@ -10,18 +10,17 @@ import { ExerciseDetailScreenComponent } from './exercise-detail-screen/exercise
 const HOME = 'home';
 const SCHEDULE = 'schedules';
 const PATHS = 'paths';
-const PATH = 'paths';
-const Exercise = 'exercises';
-const ExerciseDetail = 'exercises';
+const Exercises = 'exercises';
 
 const routes: Routes = [
   {path:'', redirectTo: `${HOME}`,pathMatch:'full'},
   { path: HOME, component: HomeScreenComponent },
   { path: SCHEDULE, component: SchedulesComponent },
   { path: PATHS, component: PathScreenComponent },
-  { path: PATH+"/:id", component: PathDetailScreenComponent },
-  { path: Exercise, component: ExerciseScreenComponent },
-  { path: ExerciseDetail+"/:id", component: ExerciseDetailScreenComponent }
+  { path: PATHS+"/:id", component: PathDetailScreenComponent },
+  { path: PATHS+"/:id/:exId", component: ExerciseDetailScreenComponent },
+  { path: Exercises, component: ExerciseScreenComponent },
+  { path: Exercises+"/:exId", component: ExerciseDetailScreenComponent }
 
 
 ];

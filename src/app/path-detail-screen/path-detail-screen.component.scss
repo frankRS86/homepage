@@ -1,24 +1,41 @@
 @import "../app.component.scss"; 
 
+
 .exercise
 {
+    font-family: "Calibri Light";
+    font-weight: lighter;
+    color:black;
     margin: 0px auto 16px auto;
-    width:700px;
+    width:650px;
     height:280px;
     //border-bottom: 2px solid black;
     display: table;
    // margin-bottom: 16px;
+   cursor:pointer;
 }
 
 .content
 {
    // border-style: solid;
-    font-family: Optima;
+    font-family: "Calibri Light";
     font-size: 20px;
-    
+    width:200px;
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: left;
+}
+
+.contentlevel
+{
+    //border-style: solid;
+    font-family: "Calibri Light";
+    font-size: 20px;
+    width:80px;
     display: table-cell; 
     vertical-align: middle; 
     text-align: center;
+    margin-left: 60px;
 }
 
 .contentimg
@@ -35,4 +52,11 @@
     background-color: red;
     background: rgb(36,96,140);
     background: linear-gradient(90deg, rgba(36,96,140,0.458420868347339) 0%, rgba(36,96,140,1) 100%);
+}
+
+.itemname
+{
+    font-family: "Calibri Light";
+    font-size: 25px;
+    font-weight: lighter;
 }

@@ -17,7 +17,7 @@
     width: 300px;
     margin: 16px 16px 16px;
     padding: 16px;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -25,6 +25,11 @@
     line-height: 24px;
     font-size: 19px;
     font-weight: bold;
+    border-style: solid;
+
+    min-width: 300px;
+    min-height: 300px;
+    overflow: hidden;
   }
 
   .card-container .card:not(:last-child) {
@@ -55,6 +60,5 @@
     font-weight: 600;
     border: none;
     width: auto;
-    min-width: 30%;
     position: relative;
   }
