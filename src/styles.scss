@@ -5,8 +5,28 @@
     src: local("Bebas-Neue"), url(./assets/fonts/BebasNeue-Regular.ttf) format("truetype");
   }
   
+html *
+{
+   color: whitesmoke !important;
+
+}
 
 body{
     width:100%;
     margin-left: 0px;
+    background-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  body{
+    width:100%;
+    margin-left: 0px;
+    background-color: white;
+}
+
+html *
+{
+   color: black !important;
+
+}
 }

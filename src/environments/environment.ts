@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   en_redirect:"localhost:4200/en-US",
   de_redirect :"localhost:4200/de",
-  base_url:"https://localhost:44307/"
+  base_url:"https://localhost:44307/",
+  version: 'dev-1'
 };
 
 

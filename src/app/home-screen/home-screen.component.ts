@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-home-screen',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeScreenComponent implements OnInit {
 
   constructor() { }
-
+  public build = environment.version;
   ngOnInit(): void {
   }
 

@@ -8,8 +8,9 @@ import { SchedulesComponent } from './schedules/schedules.component';
 import { PathScreenComponent } from './paths-overview-screen/paths-overview-screen.component';
 import { PathDetailScreenComponent } from './path-detail-screen/path-detail-screen.component';
 import { ExerciseScreenComponent } from './exercise-screen/exercise-screen.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ExerciseDetailScreenComponent } from './exercise-detail-screen/exercise-detail-screen.component';
+import { AuthInterceptor } from './services/AuthInterceptor';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,11 @@ import { ExerciseDetailScreenComponent } from './exercise-detail-screen/exercise
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: AuthInterceptor,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
