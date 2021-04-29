@@ -1,0 +1,144 @@
+<p i18n class="headline">Nutrition and diet</p>
+
+<div class="content">
+Nutrition is a key player in gaining muscle and strength.
+<br><br>
+<h2>Around 80% of your success depends on your diet</h2>
+only the remaining 20% are training and to some litte percenteage also your genes. But don't focus on this and use it as an excuse. 
+With proper training, the right diet and <b>consistency</b> you can gain everything.
+
+<div class="textblock">
+    <img src="assets/macros.png" id="background" class="textimage_1"/>
+<div style="margin-left:20px;">
+    <p class="headline" i18n>Basics about calories and macros</p>
+    <p i18n>There is one simple truth you must know which is the basic for all upcoming infos about nutrition:<br><br>
+        <b>If you want to gain muscle and therefore weight, you must consume more calories than you burn</b><br><br>
+        <b>If you want to lose weight, you must consume less calories than you burn</b><br><br>
+        Thats all. Simple right?<br>
+        To find out how many calories you burn a day, there are several methods:
+        </p>
+        <ul>
+           <li>use a daily calories calculator of your choice like the one below</li>
+           <li>use your smartwatch with calory-counter</li>
+           <li>go to the pysiotherapist of your trust and make a test</li> 
+        </ul>
+
+        <p>
+            You know how many calories you burn on an avarge day? Perfekt. Now about the foods you eat,
+            what they consist of and how many calories they contain.
+            There are three basic macro nutrition elements everything eadible on the planet consist of. 
+            And they occur in different percantages per food. But most important, each macro has a different amount of calories per gram:
+        </p>
+        <ul>
+            <li>Carbohydrates - 4 calories per gram</li>
+            <li>Fats - 9 calories per gram</li>
+            <li>Protein - 4 calories per gram</li>
+        </ul>
+        With this knowledge, you are able to calculate exactly how many calories you eat a day, or to make a meal plan for your muscle-gaining diet.
+      
+</div>
+</div>
+
+<div class="textblock-right">
+    
+<div style="margin-left:20px">
+    <p class="headline" i18n>Basic food knowledge</p>
+<p i18n>You know now how many calories each macro contains but does this mean you can saturate your daily colory needs by 100% fat intake?
+    Well theoretically yes, but this might not be the best idea. Consider the following:<br>
+</p>
+<ul>
+    <li>Your body needs all of these macros (and consisting micros, like vitamines) to stay healty and to function well.</li>
+    <li>carbohydrates deliver important and quick energy for your body to keep high performance. So you should plan with around 50% of calories through carbs a day.</li>
+    <li>In order to grow muscle your daily protein intake should be 2g per Kg bodyweight. Means if you weight 70kg, you should aim for 140g of protein a day. </li>
+    <li>Your body also needs a certain amount of fats a day to stay healthy (especially unsaturated fats like omega3). So eating no fats at all to lose bodyfat, is no good idea. </li>
+</ul>
+    Also there are differences in the <b>quality</b> of each macro:
+    <ul>
+        <li><b>Good carbs:</b>brown rice, lentils, beans</li>
+        <li><b>Bad carbs:</b>white bread, sugar, soda, sweets</li>
+        <li><b>Good fats:</b>mono- / poly-unsaturated fats like fish, nuts, avocado, eggs (yes), olives</li>
+        <li><b>Bad fats:</b>staturated-/ trans-fats like in meat, dairy products, fast-food, palm-oil</li>
+        <li><b>Good source of protein:</b>lentils, beans, nuts, eggs, peas, soy, lean meat, fish, fat reduced dairy products</li>
+        <li><b>Not so good source of protein:</b>fat meat (bacon, minced meat), fat cheese</li>
+    </ul>
+
+</div>
+<img src="assets/linsensuppe_12.jpeg" id="background" class="textimage"/>
+</div>
+
+<div class="textblock">
+   <!-- <img src="assets/nutrition.jpg" id="background" class="textimage"/>-->
+<div>
+    <p class="headline" i18n>Hands on - How do I plan my meals nows?</p>
+    <p i18n>To sum it up, how can you plan your diet now to get quick results?  </p>
+        <ol>
+       <li> Measure yourself: Weight and height are needed.</li>
+        <li>Calculate your daily colory needs:</li>
+   
+  
+
+    <div class="calculatorbox">
+        <h3 style="width:100%; text-align: center;">Calorie calculator</h3>
+    <div>
+        <input type="radio" value="male" name="gender" [(ngModel)]="sex"> Male
+    <input type="radio" value="female" name="gender" [(ngModel)]="sex"> Female
+</div>
+<div class="inputs">
+    <b>pick your activity level</b>
+    <table>
+        <tr><td class="td1"><input type="radio" value="0" name="level" [(ngModel)]="activity"><b>Nothing</b></td> <td>not active at all. You have light office job, where you drive by car. 
+        The longest walk you do on a day is the one from couch to kitchen. You don't do any sports</td></tr>
+        <tr><td class="td1"><input type="radio" value="1" name="level" [(ngModel)]="activity"><b>Low</b></td><td>slightly active. You have light office job. You do sports one or two times a week</td></tr>
+         <tr><td class="td1"><input type="radio" value="2" name="level" [(ngModel)]="activity"><b>Medium</b></td><td>sportive human. You do Sports 3 - 4 times a week.</td></tr>
+         <tr><td class="td1"><input type="radio" value="3" name="level" [(ngModel)]="activity"><b>High</b></td><td>sportive human. You do Sports 5 - 6 times a week and/or have a heavy physical challenging job.</td></tr>
+         <tr><td class="td1"><input type="radio" value="4" name="level" [(ngModel)]="activity"><b>Professional Athlete</b></td><td>You do Sports 6 - 7 times a week.</td></tr>
+    </table>
+    <div><input [(ngModel)]="weight"> Weight in Kg</div>
+    <div><input [(ngModel)]="height"> Height in cm</div>
+    <div><input [(ngModel)]="age"> Age in Years</div>
+    <div><button (click)="calculate()">calculate</button></div> <p style="font-size: 10px;">Based on [1] Harrison Benedict equation</p>
+
+    <div *ngIf="result != 0" class="result">
+        <div *ngIf="result < 0" style="color:red">please correct the inputs</div>
+        <ul>
+        <li><div *ngIf="result > 0" style="font-weight: bold;">your estimated daily calory need is: {{result}}ckal</div></li>
+        <li><div *ngIf="result > 0">to gain weight: eat at least: <b>{{result+surplus}}ckal</b>  <button (click)="plus()">+</button><button (click)="minus()">-</button></div></li>
+        <li><div *ngIf="result > 0">2g Protein per Kg Bodyweight: <b>{{protein}}g</b></div></li>
+        <li><div *ngIf="result > 0">percentage of carbs you like to eat <b>{{perCarbs}}%</b>  <button (click)="plusCarbs()">+</button><button (click)="minusCarbs()">-</button></div></li>
+        <li><div *ngIf="result > 0">your macros: {{protein}}g of Protein({{perProtein}}%) - {{carbs}}g of Carbs({{perCarbs}}%) - {{fats}}g of Fat({{perFats}}%)</div></li>
+        </ul>
+    </div>
+
+    </div>
+</div>
+
+
+        <li>Mark your daily calorie goal. If you want to gain weight, eat around 300 - 500 calories more than you need a day.</li>
+        <li>Now comes a bit math. Split your makros (you can also use the calculator above):
+            <dl>
+                <dt>Protein</dt>
+                <dd>2 grams per Kg Bodyweight * 4 = amaount of calories you should eat in protein a day</dd>
+                <dt>Carbs</dt>
+                <dd>Between 50% and 60% of your calories a day should come from carbs</dd>
+                <dt>Fats</dt>
+                <dd>Substract the amount of protein and carbs you calculated from your daily calory goal. The rest is fats</dd>
+              </dl>
+        Now you know how many grams of each macro you should eat a day<br><br>
+        </li>
+        <li>Pick a calory counter-app of your choice (e.g. myFitnessPal) and track your intake. Most of them offer barcode scanner functionality, so you don't have to 
+            type the macros from the nutrition table by yourself.
+        </li>
+        <li>Happy gaining muscle :) Find in the following some of my favorite protein-heavy receipes.</li>
+
+
+</ol>
+</div>
+</div>
+
+</div>
+
+
+<h1>Recipes</h1>
+
+<h3>sources</h3>
+[1] The Harrison Benedict equation: <a href="https://en.wikipedia.org/wiki/Harris%E2%80%93Benedict_equation">Wikipedia - Harrison Benedict equation</a>

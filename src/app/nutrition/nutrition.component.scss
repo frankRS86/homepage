@@ -1,0 +1,142 @@
+@import "../app.component.scss"; 
+
+table{
+    border-spacing: 7px;
+}
+
+.td1
+{
+    align-items: center;
+    width:200px;
+    //border-style: solid;
+}
+
+.inputs
+{
+    margin-top: 20px;
+}
+
+.result
+{
+    font-size: 20px;
+}
+
+.calculatorbox
+{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: gray;
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+    padding: 10px 10px 10px 10px;
+}
+
+.content {
+    display: flex;
+    margin: 0px auto 32px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textblock
+{
+    display:flex;
+    width:70%;
+    align-items: center;
+
+    font-family:optima;
+    font-size:20px;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+
+}
+
+.textblock-right
+{
+    @extend .textblock;
+    float:right;
+}
+
+.textimage
+{
+    width: 500px;
+    height: 400px;
+}
+
+.textimage_1
+{
+    width: 500px;
+    height: 350px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .td1
+    {
+        align-items: flex-start;
+        width:100px;
+        //border-style: solid;
+    }
+
+    ol{
+        margin-left: 0px; 
+        padding-left: 0px;
+    };
+
+    .content{
+        margin: 5px 10px 32px;
+    }
+
+    .calculatorbox
+{
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: gray;
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+    padding: 10px 10px 10px 10px;
+}
+
+    .textblock,
+    .textblock-right
+    {
+        float:left;
+        text-align: left;
+        width:100%;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-orient: vertical;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+  }
+
+
+  @media screen and (max-width: 1400px) {
+
+    .textblock,
+    .textblock-right
+    {
+        float:left;
+        text-align: left;
+        width:90%;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-orient: vertical;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+  }

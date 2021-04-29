@@ -11,6 +11,9 @@ import { ExerciseScreenComponent } from './exercise-screen/exercise-screen.compo
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ExerciseDetailScreenComponent } from './exercise-detail-screen/exercise-detail-screen.component';
 import { AuthInterceptor } from './services/AuthInterceptor';
+import { ReceipeComponent } from './receipe/receipe.component';
+import { NutritionComponent } from './nutrition/nutrition.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,12 +23,15 @@ import { AuthInterceptor } from './services/AuthInterceptor';
     PathScreenComponent,
     PathDetailScreenComponent,
     ExerciseScreenComponent,
-    ExerciseDetailScreenComponent
+    ExerciseDetailScreenComponent,
+    ReceipeComponent,
+    NutritionComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
