@@ -1,7 +1,37 @@
 @import "../app.component.scss"; 
 
+
+.recTitle
+{
+
+}
+
+.ingredients
+{
+    border-style: solid;
+    border-color: red;
+}
+
+.description
+{
+
+}
+
+.receipe
+{
+    height:190px;
+}
+
+.receipeImg
+{
+    width:200px;
+    height: 170px;
+}
+
 table{
     border-spacing: 7px;
+    height:100%;
+    width:100%;
 }
 
 .td1
@@ -78,6 +108,32 @@ table{
 
 @media screen and (max-width: 700px) {
 
+.textimage_1
+{
+    margin-top: 10px;
+    width: 90%;
+    height:90%;
+}
+
+.textimage
+{
+    margin-top: 10px;
+    width: 90%;
+    height:90%;
+}
+
+    .background{    
+        background-image: url("/");
+        display: none;
+        visibility: hidden;
+    }
+
+    .description
+    {
+        display: none;
+        visibility: hidden;
+    }
+
     .td1
     {
         align-items: flex-start;
@@ -86,30 +142,35 @@ table{
     }
 
     ol{
-        margin-left: 0px; 
+        margin-left: 20px; 
         padding-left: 0px;
     };
 
     .content{
-        margin: 5px 10px 32px;
+        width:100%;
     }
 
     .calculatorbox
 {
+    width:90%;
     border-style: solid;
     border-radius: 4px;
     border-width: 1px;
     border-color: gray;
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
     padding: 10px 10px 10px 10px;
+    margin-left: 5px;
 }
 
     .textblock,
     .textblock-right
     {
-        float:left;
+        font-size:15px;
+        align-items: center;
+        text-align: center;
+        width: 99%;
+        margin-right: 5px;
         text-align: left;
-        width:100%;
         -webkit-box-orient: vertical;
         -moz-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -122,14 +183,13 @@ table{
   }
 
 
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1400px) and (min-width: 700px) {
 
     .textblock,
     .textblock-right
     {
-        float:left;
         text-align: left;
-        width:90%;
+        align-items: center;
         -webkit-box-orient: vertical;
         -moz-box-orient: vertical;
         -webkit-box-direction: normal;

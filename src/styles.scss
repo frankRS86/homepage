@@ -7,26 +7,27 @@
   
 html *
 {
-  // color: whitesmoke !important;
+   color: black !important;
 
 }
 
 body{
     width:100%;
     margin-left: 0px;
-   // background-color: black;
+    background-color: white;
 }
 
 @media (prefers-color-scheme: dark) {
   body{
     width:100%;
     margin-left: 0px;
-    background-color: white;
+    background-color: black;
+    color: whitesmoke !important;
 }
 
 html *
 {
-   color: black !important;
+  color: whitesmoke !important;
 
 }
 }
