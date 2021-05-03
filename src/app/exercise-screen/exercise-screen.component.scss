@@ -45,3 +45,10 @@
     float:left;
    // margin-left: 16px;
   }
+
+  @media (prefers-color-scheme: dark) {
+
+    input{
+        background-color: black;
+    }
+  }

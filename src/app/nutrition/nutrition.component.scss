@@ -17,6 +17,8 @@
 
 }
 
+
+
 .receipe
 {
     height:190px;
@@ -105,6 +107,16 @@ table{
     width: 500px;
     height: 350px;
 }
+
+@media (prefers-color-scheme: dark) {
+
+    input{
+        background-color: black;
+    }
+    button{
+        background-color: black;
+    }
+  }
 
 @media screen and (max-width: 700px) {
 

@@ -100,12 +100,12 @@ With proper training, the right diet and <b>consistency</b> you can gain everyth
 
     <div *ngIf="result != 0" class="result">
         <div *ngIf="result < 0" style="color:red">please correct the inputs</div>
-        <ul>
-        <li><div *ngIf="result > 0" style="font-weight: bold;">your estimated daily calory need is: {{result}}ckal</div></li>
-        <li><div *ngIf="result > 0">to gain weight: eat at least: <b>{{result+surplus}}ckal</b>  <button (click)="plus()">+</button><button (click)="minus()">-</button></div></li>
-        <li><div *ngIf="result > 0">2g Protein per Kg Bodyweight: <b>{{protein}}g</b></div></li>
-        <li><div *ngIf="result > 0">percentage of carbs you like to eat <b>{{perCarbs}}%</b>  <button (click)="plusCarbs()">+</button><button (click)="minusCarbs()">-</button></div></li>
-        <li><div *ngIf="result > 0">your macros: {{protein}}g of Protein({{perProtein}}%) - {{carbs}}g of Carbs({{perCarbs}}%) - {{fats}}g of Fat({{perFats}}%)</div></li>
+        <ul *ngIf="result > 0" >
+        <li><div style="font-weight: bold;">your estimated daily calory need is: {{result}}ckal</div></li>
+        <li><div >to gain weight: eat at least: <b>{{result+surplus}}ckal</b>  <button (click)="plus()">+</button><button (click)="minus()">-</button></div></li>
+        <li><div >2g Protein per Kg Bodyweight: <b>{{protein}}g</b></div></li>
+        <li><div >percentage of carbs you like to eat <b>{{perCarbs}}%</b>  <button (click)="plusCarbs()">+</button><button (click)="minusCarbs()">-</button></div></li>
+        <li><div >your macros: {{protein}}g of Protein({{perProtein}}%) - {{carbs}}g of Carbs({{perCarbs}}%) - {{fats}}g of Fat({{perFats}}%)</div></li>
         </ul>
     </div>
 

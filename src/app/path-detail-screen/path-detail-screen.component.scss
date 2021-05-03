@@ -9,7 +9,7 @@
     margin: 0px auto 16px auto;
     width:650px;
     height:280px;
-    //border-bottom: 2px solid black;
+    border: 2px solid #444;
     display: table;
    // margin-bottom: 16px;
    cursor:pointer;
@@ -19,7 +19,6 @@
 {
     //border-style: solid;
     font-family: "Calibri Light";
-    font-size: 20px;
     width:220px;
     display: table-cell; 
     vertical-align: middle; 
@@ -66,7 +65,7 @@
 
 .itemname
 {
-    font-family: "Calibri Light";
-    font-size: 25px;
-    font-weight: lighter;
+    font-family: optima;
+    font-size: 40px;
+    font-weight: 50;
 }

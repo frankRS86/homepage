@@ -9,6 +9,11 @@
     margin: 0 auto 0 auto;
   }
 
+  .cardtitle
+  {
+    padding-bottom: 10px;
+  } 
+
   .card {
     border-radius: 4px;
     border: 1px solid #eee;
@@ -26,10 +31,20 @@
     font-size: 19px;
     font-weight: bold;
     border-style: solid;
-
+    text-align: center;
     min-width: 300px;
     min-height: 300px;
     overflow: hidden;
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    .card {
+      background-color: black;
+      text-align: center;
+      border: 1px solid #444;
+    }
+
   }
 
   .card-container .card:not(:last-child) {

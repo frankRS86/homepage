@@ -36,21 +36,21 @@ export class NutritionComponent implements OnInit {
 
     if(isNaN(w))
     {
-      this.weight = "please enter a valid number";
+      //this.weight = "please enter a valid number";
       this.result = -1;
       return;
     }
 
     if(isNaN(h))
     {
-      this.height = "please enter a valid number";
+      //this.height = "please enter a valid number";
       this.result = -1;
       return;
     }
 
     if(isNaN(a))
     {
-      this.age = "please enter a valid number";
+      //this.age = "please enter a valid number";
       this.result = -1;
       return;
     }
