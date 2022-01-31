@@ -18,7 +18,6 @@ const IMPRESSUM = 'impressum';
 
 const routes = [
   {path:'', redirectTo: `${HOME}`,pathMatch:'full'},
-  {path: '**', redirectTo: '/index.html', pathMatch:'full'},
   { path: HOME, component: HomeScreenComponent },
   { path: SCHEDULE, component: SchedulesComponent },
   { path: IMPRESSUM, component: ImpressumComponent },
