@@ -20,7 +20,6 @@ const routes: Routes = [
   {path:'', redirectTo: `${HOME}`,pathMatch:'full'},
   {path:'**', redirectTo: `${HOME}`,pathMatch:'full'},
   {path:'index', redirectTo: `${HOME}`,pathMatch:'full'},
-  {path:'/', redirectTo: `${HOME}`},
   { path: HOME, component: HomeScreenComponent },
   { path: SCHEDULE, component: SchedulesComponent },
   { path: IMPRESSUM, component: ImpressumComponent },
