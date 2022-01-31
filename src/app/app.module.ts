@@ -14,6 +14,7 @@ import { AuthInterceptor } from './services/AuthInterceptor';
 import { ReceipeComponent } from './receipe/receipe.component';
 import { NutritionComponent } from './nutrition/nutrition.component';
 import { FormsModule } from '@angular/forms';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     ExerciseScreenComponent,
     ExerciseDetailScreenComponent,
     ReceipeComponent,
-    NutritionComponent
+    NutritionComponent,
+    ImpressumComponent
   ],
   imports: [
     BrowserModule,

@@ -7,17 +7,20 @@ import { PathDetailScreenComponent } from './path-detail-screen/path-detail-scre
 import { ExerciseScreenComponent } from './exercise-screen/exercise-screen.component';
 import { ExerciseDetailScreenComponent } from './exercise-detail-screen/exercise-detail-screen.component';
 import { NutritionComponent } from './nutrition/nutrition.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 const HOME = 'home';
 const SCHEDULE = 'schedules';
 const PATHS = 'paths';
 const Exercises = 'exercises';
 const NUTRITION = 'nutrition';
+const IMPRESSUM = 'impressum';
 
 const routes: Routes = [
   {path:'', redirectTo: `${HOME}`,pathMatch:'full'},
   { path: HOME, component: HomeScreenComponent },
   { path: SCHEDULE, component: SchedulesComponent },
+  { path: IMPRESSUM, component: ImpressumComponent },
   { path: PATHS, component: PathScreenComponent },
   { path: PATHS+"/:id", component: PathDetailScreenComponent },
   { path: PATHS+"/:id/:exId", component: ExerciseDetailScreenComponent },
