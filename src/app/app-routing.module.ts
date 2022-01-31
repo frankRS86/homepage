@@ -16,10 +16,9 @@ const Exercises = 'exercises';
 const NUTRITION = 'nutrition';
 const IMPRESSUM = 'impressum';
 
-const routes: Routes = [
+const routes = [
   {path:'', redirectTo: `${HOME}`,pathMatch:'full'},
-  {path:'**', redirectTo: `${HOME}`,pathMatch:'full'},
-  {path:'index', redirectTo: `${HOME}`,pathMatch:'full'},
+  {path: '**', redirectTo: '/index.html', pathMatch:'full'},
   { path: HOME, component: HomeScreenComponent },
   { path: SCHEDULE, component: SchedulesComponent },
   { path: IMPRESSUM, component: ImpressumComponent },
